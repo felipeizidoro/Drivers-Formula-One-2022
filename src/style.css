@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url("image/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    height: 200px;
+    gap: 10px;
+}
+.header>img {
+    height: 45%;
+}
+.header>h1 {
+    color: #f1ecff;
+}
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px;
+    gap: 80px;
+}
+.driverList {
+    position: relative;
+    width: 310px;
+    height: 520px;
+}
+.buttons {
+    border: none;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+.buttons:hover {
+    background-color: #8351FE;
+}
+.buttons>.arrowBack {
+    transform: rotateY(180deg);
+}
+.card {
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+}
+.card.selected {
+    opacity: 1;
+    z-index: 1;
+} .card.cardVerstappen {
+    background: url("image/verstapen.png") no-repeat; 
+    background-size: cover;  
+    background-position: center;
+} 
+.card.cardPerez {
+    background: url("image/peres.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardLeclerc {
+    background: url("image/leclerc.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardSainz {
+    background: url("image/sainz.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardHamilton {
+    background: url("image/luispng.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardRussell {
+    background: url("image/russel.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardNorris {
+    background: url("image/noris.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardRicciardo {
+    background: url("image/daniel.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardAlonso {
+    background: url("image/alonso.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardOcon {
+    background: url("image/ocon.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardGasly {
+    background: url("image/gasly.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardTsunoda {
+    background: url("image/tisunoda.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardVettel {
+    background: url("image/vettel.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardStroll {
+    background: url("image/stroll.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardAlbon {
+    background: url("image/albon.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardLatifi {
+    background: url("image/latiffi.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardBottas {
+    background: url("image/bottas.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardZhou {
+    background: url("image/zhou.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardSchumacher {
+    background: url("image/mick.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card.cardMagnussen {
+    background: url("image/mag.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nameXP {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(179, 177, 185, 0.7);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px 10px;
+}
+.card .nameXP .namePilot {
+    color: rgb(53, 45, 45);
+    font-size: 22px;
+}
+.card .nameXP .team {
+    background-color: #333;
+    color: #f1ecff;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+.card .description {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .description .title {
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 15px;
+    padding: 12px;
+}
+.card .description .pilotDescription {
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}

@@ -1,0 +1,93 @@
+@media (max-width:690px) {
+    .mainContent {
+        padding: 0px 15px;
+        gap: 30px;
+    }
+}
+
+@media (max-width:550px) {
+    .mainContent {
+        padding: 0px 5px;
+        gap: 10px;
+    }
+
+    .buttons {
+        height: 30px;
+        width: 30px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:470px) {
+    .header {
+        font-size: 12px;
+    }
+
+    .driverList {
+        height: 480px;
+    }
+
+    .mainContent {
+        padding: 0px 5px;
+        gap: 10px;
+    }
+
+    .card .nameXP .namePilot {
+        font-size: 18px;
+    }
+
+    .card .nameXP .lifeXp {
+        background-color: #333;
+        color: #f1ecff;
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 5px 5px;
+    }
+
+    .buttons {
+        height: 30px;
+        width: 30px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:390px) {
+    .header {
+        font-size: 10px;
+    }
+
+    .driverList {
+        height: 420px;
+    }
+
+    .card .namePilot {
+        max-height: 190px;
+    }
+
+    .mainContent {
+        padding: 0px 5px;
+        gap: 5px;
+    }
+
+    .buttons {
+        height: 20px;
+        width: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card .description .pilotDescription {
+        font-size: 12px;
+        padding: 10px;
+        text-align: justify;
+        overflow-y: auto;
+    }
+}
